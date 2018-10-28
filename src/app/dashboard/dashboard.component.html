@@ -1,0 +1,53 @@
+<div class="row">
+
+    <div class="col-md-12">
+        <h1>Dashboard</h1>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col">
+        <angular2-multiselect [data]="data" [(ngModel)]="selectedManager" [settings]="managerSettings" (onSelect)="onManagerUpdate($event)">
+        </angular2-multiselect>
+    </div>
+    <div class="col">
+        <angular2-multiselect [data]="data" [(ngModel)]="selectedLocation" [settings]="locationSettings" (onSelect)="onLocationUpdate($event)">
+        </angular2-multiselect>
+    </div>
+    <div class="col">
+        <angular2-multiselect [data]="data" [(ngModel)]="selectedCC" [settings]="costCenterSettings" (onSelect)="onCCUpdate($event)">
+        </angular2-multiselect>
+    </div>
+    <div class="col">
+        <angular2-multiselect [data]="data" [(ngModel)]="selectedGender" [settings]="genderSettings" (onSelect)="onGenderUpdate($event)">
+        </angular2-multiselect>
+    </div>
+    <div class="col">
+        <angular2-multiselect [data]="data" [(ngModel)]="selectedDesignation" [settings]="designationSettings" (onSelect)="onDesignationUpdate($event)">
+        </angular2-multiselect>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+        <div [chart]="chart"></div>
+    </div>
+    <div class="col-md-4">
+        <div [chart]="chart2"></div>
+    </div>
+    <div class="col-md-4">
+       <div [chart]="chart3"></div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
